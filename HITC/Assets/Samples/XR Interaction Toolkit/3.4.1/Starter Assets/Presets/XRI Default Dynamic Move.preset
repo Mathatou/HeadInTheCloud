@@ -37,16 +37,16 @@ Preset:
     value: 2.5
     objectReference: {fileID: 0}
   - target: {fileID: 0}
-    propertyPath: m_InAirControlModifier
-    value: 0.5
-    objectReference: {fileID: 0}
-  - target: {fileID: 0}
     propertyPath: m_EnableStrafe
     value: 1
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_EnableFly
     value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_UseGravity
+    value: 1
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_ForwardSource
@@ -157,10 +157,6 @@ Preset:
     value: 0
     objectReference: {fileID: 0}
   - target: {fileID: 0}
-    propertyPath: m_UseGravity
-    value: 1
-    objectReference: {fileID: 0}
-  - target: {fileID: 0}
     propertyPath: m_HeadTransform
     value: 
     objectReference: {fileID: 0}
@@ -181,8 +177,3 @@ Preset:
     value: 0
     objectReference: {fileID: 0}
   m_ExcludedProperties: []
-  m_CoupledType:
-    m_NativeTypeID: 0
-    m_ManagedTypePPtr: {fileID: 0}
-    m_ManagedTypeFallback: 
-  m_CoupledProperties: []
