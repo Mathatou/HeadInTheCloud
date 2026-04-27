@@ -7,13 +7,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PortalShader
+  m_Name: PortalToLobby
   m_Shader: {fileID: -6465566751694194690, guid: bcb52ee5bfb4e5145b49476967dbbf43, type: 3}
-  m_Parent: {fileID: 2100000, guid: 4c9d8263e04b387428eebc562fa8ac92, type: 2}
+  m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -23,17 +23,37 @@ Material:
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs: []
+    m_TexEnvs:
+    - _Mask:
+        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _DissolveAmount: 2
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _Scale: 2.5
     - _Speed: 0.5
     - _TwirlStrenght: 30
+    - _XRMotionVectorsPass: 1
     m_Colors:
-    - _Color: {r: 67.79349, g: 17.587933, b: 47.91687, a: 1}
+    - _Color: {r: 27.161139, g: 60.981136, b: 20.114197, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &1007086462734383431
+--- !u!114 &319707528864887745
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
