@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Anchor
   - Lighter
+  - Target
+  - gaze
+  - Main
   layers:
   - Default
   - TransparentFX
