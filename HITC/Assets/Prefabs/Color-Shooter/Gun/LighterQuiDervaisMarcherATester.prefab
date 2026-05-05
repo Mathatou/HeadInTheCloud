@@ -19710,7 +19710,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3785715893117468182}
+  m_Father: {fileID: 7445371041318505131}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2161350875211004238
 MonoBehaviour:
@@ -19810,6 +19810,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3785715893117468182}
   - component: {fileID: 558097823488210086}
+  - component: {fileID: 4199997415117768592}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -19837,7 +19838,6 @@ Transform:
   - {fileID: 4387431227766830961}
   - {fileID: 4420904853565620113}
   - {fileID: 3044060618500664243}
-  - {fileID: 2915541378940512860}
   m_Father: {fileID: 7445371041318505131}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &558097823488210086
@@ -19889,6 +19889,27 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_Variable: {fileID: 0}
+--- !u!65 &4199997415117768592
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7385145047185272974}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.04153666, y: 0.27367306, z: 0.077926636}
+  m_Center: {x: 0.00018940866, y: 0.024181366, z: -0.00015258789}
 --- !u!1 &7734263250039758628
 GameObject:
   m_ObjectHideFlags: 0
@@ -19989,13 +20010,12 @@ GameObject:
   m_Component:
   - component: {fileID: 7445371041318505131}
   - component: {fileID: 3059404602561007006}
-  - component: {fileID: 3739123348889201732}
   - component: {fileID: 1791969375578723933}
   - component: {fileID: 1318850294043356441}
   - component: {fileID: 3241640444899655409}
   - component: {fileID: 1137458258959900315}
   m_Layer: 0
-  m_Name: lighter
+  m_Name: parent Lighter
   m_TagString: Lighter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20015,6 +20035,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3785715893117468182}
+  - {fileID: 2915541378940512860}
   m_Father: {fileID: 2505649120356978335}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &3059404602561007006
@@ -20044,27 +20065,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!65 &3739123348889201732
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7789139585983139857}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.04153666, y: 0.27367306, z: 0.077926636}
-  m_Center: {x: 0.00018940866, y: 0.024181366, z: -0.00015258789}
 --- !u!114 &1791969375578723933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20213,7 +20213,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7789139585983139857}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0a1302d0d134fa8a2a5b3bf4aec3c20, type: 3}
   m_Name: 
@@ -20430,7 +20430,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7236724378327198317, guid: a1774c2a332f0594a928a8e2ea830927, type: 3}
       propertyPath: m_Name
-      value: Tets
+      value: LighterQuiDervaisMarcherATester
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
