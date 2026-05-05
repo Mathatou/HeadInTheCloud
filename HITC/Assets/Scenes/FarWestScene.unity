@@ -15919,7 +15919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0176abb8b55b0454ba1277885309eb14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  sceneName: TestScene
+  sceneName: LobbyScene
 --- !u!198 &2527538722102315527
 ParticleSystem:
   m_ObjectHideFlags: 0
