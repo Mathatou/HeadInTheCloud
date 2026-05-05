@@ -9,6 +9,7 @@ TagManager:
   - Target
   - gaze
   - Main
+  - Cle
   layers:
   - Default
   - TransparentFX
