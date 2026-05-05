@@ -1,55 +1,37 @@
 using TMPro;
+using UnityEditor.Compilation;
 using UnityEngine;
 
-public class MyGazeInteractor : MonoBehaviour
+public abstract class MyGazeInteractor : MonoBehaviour
 {
 
-    [SerializeField] private float maxDistance = 100f;
-    [SerializeField] private float dwellTime = 10f;
-    [SerializeField] private LayerMask TargetLayer;
-    [SerializeField] private GameObject UItoHide;
-    private string[] textsToCycle = { 
-    "Bienvenue dans Color Shooter !", 
-    "Tirez sur les cibles de la couleur adéquate !", 
-    "Derrière vous se trouve deux pistolets de couleur.",
-    "Tirez le levier à côté pour lancer le jeu !"};
-
+    [SerializeField] protected float maxDistance = 100f;
+    [SerializeField] protected float TimerUntilGazeIsCompleted = 10f;
+    [SerializeField] protected LayerMask TargetLayer;
 
     private Camera mainCam;
     private float gazeTimer;
-    private Transform currentTarget;
-    private int currentTextIndex = 0;
-    private TextMeshProUGUI textZone;
+    protected Transform currentTarget;
 
     private void Awake()
     {
         mainCam = Camera.main;        
     }
+
+    protected abstract void handleGaze(Transform GameObjetTransform);
     // Update is called once per frame
     void Update()
     {
         var camTransform = mainCam.transform;
-        if (Physics.Raycast(camTransform.position, camTransform.forward, out RaycastHit rHit, maxDistance,TargetLayer))
+        if (Physics.Raycast(camTransform.position, camTransform.forward, out RaycastHit rHit, maxDistance, TargetLayer))
         {
             var targetTransform = rHit.transform;
             if (targetTransform == currentTarget)
             {
                 gazeTimer += Time.deltaTime;
-                if(gazeTimer >= dwellTime)
+                if (gazeTimer >= TimerUntilGazeIsCompleted)
                 {
-                    if (targetTransform.name.Equals("Canvas"))
-                    {
-                        if (textZone == null)
-                        {
-                            textZone = targetTransform.GetComponentInChildren<TextMeshProUGUI>();
-                        }
-                        currentTextIndex = (currentTextIndex + 1) % textsToCycle.Length;
-                        textZone.text = textsToCycle[currentTextIndex];
-                        if (UItoHide.activeInHierarchy)
-                        {
-                            UItoHide.SetActive(false);
-                        }
-                    }
+                    handleGaze(targetTransform);
                     //rHit.collider.gameObject.SetActive(false);
                     gazeTimer = 0f;
                 }
@@ -64,6 +46,5 @@ public class MyGazeInteractor : MonoBehaviour
         {
             currentTarget = null;
         }
-
     }
 }
