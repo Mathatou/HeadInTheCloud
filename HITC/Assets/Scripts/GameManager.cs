@@ -130,7 +130,6 @@ public class GameManager : MonoBehaviour
     {
         timerDisplay.text = "Time's up !";
         Debug.Log("Time's up !");
-        //player.playerName = "Hadrien";
         player.score = getScore();
         player.accuracy = getPlayerAccuracy();
 
