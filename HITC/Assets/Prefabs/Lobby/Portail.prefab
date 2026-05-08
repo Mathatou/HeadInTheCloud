@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2937567274946419363}
   - component: {fileID: 515610592415919207}
   - component: {fileID: 1261544977117123496}
-  - component: {fileID: 2367630968970962450}
   - component: {fileID: 19716739100087283}
   - component: {fileID: 4998073288110098085}
   m_Layer: 0
@@ -119,19 +118,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2367630968970962450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104573464888524426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0176abb8b55b0454ba1277885309eb14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  sceneName: FarWestScene
 --- !u!65 &19716739100087283
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10135,4 +10121,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0176abb8b55b0454ba1277885309eb14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  sceneName: FarWestScene
+  sceneName: 

@@ -11,17 +11,13 @@ public class TP : MonoBehaviour
         {
             if(!string.IsNullOrEmpty(sceneName))
             {
+                Debug.Log("Teleporting to scene: " + sceneName);
                 SceneManager.LoadScene(sceneName);
             }
             else
             {
-                Debug.LogWarning("Scene name is not set for TP script on " + gameObject.name);
+                Debug.LogError("Scene name is not set in the inspector!");
             }
-        }
-        else
-        {
-            Debug.Log("Collided with non-player object: " + other.gameObject.name);
-            Debug.Log("Collided with non-player tag: " + other.gameObject.tag);
         }
     }
 }

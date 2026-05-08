@@ -775,6 +775,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: WateringCan
       objectReference: {fileID: 0}
+    - target: {fileID: 1896483518074820517, guid: 2e9fa134cc3eabc4ba02fdc0ff1c6486, type: 3}
+      propertyPath: m_Renderer
+      value: 
+      objectReference: {fileID: 1106930414}
+    - target: {fileID: 2677978853724031162, guid: 2e9fa134cc3eabc4ba02fdc0ff1c6486, type: 3}
+      propertyPath: m_Renderer
+      value: 
+      objectReference: {fileID: 1106930414}
+    - target: {fileID: 3696486621611794828, guid: 2e9fa134cc3eabc4ba02fdc0ff1c6486, type: 3}
+      propertyPath: m_Renderer
+      value: 
+      objectReference: {fileID: 1106930414}
+    - target: {fileID: 4924880398682918856, guid: 2e9fa134cc3eabc4ba02fdc0ff1c6486, type: 3}
+      propertyPath: m_Renderer
+      value: 
+      objectReference: {fileID: 1106930414}
     - target: {fileID: 7215563333676879838, guid: 2e9fa134cc3eabc4ba02fdc0ff1c6486, type: 3}
       propertyPath: playOnAwake
       value: 0
@@ -782,12 +798,18 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 189799794468070702, guid: 2e9fa134cc3eabc4ba02fdc0ff1c6486, type: 3}
+    - {fileID: 256590688421087238, guid: 2e9fa134cc3eabc4ba02fdc0ff1c6486, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e9fa134cc3eabc4ba02fdc0ff1c6486, type: 3}
 --- !u!4 &945539234 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1341942267753567421, guid: 2e9fa134cc3eabc4ba02fdc0ff1c6486, type: 3}
+  m_PrefabInstance: {fileID: 945539233}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1106930414 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7830898984899165128, guid: 2e9fa134cc3eabc4ba02fdc0ff1c6486, type: 3}
   m_PrefabInstance: {fileID: 945539233}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1262879701 stripped
@@ -1420,7 +1442,6 @@ GameObject:
   - component: {fileID: 2937567273980305953}
   - component: {fileID: 515610593314985189}
   - component: {fileID: 1261544978348796714}
-  - component: {fileID: 2367630968072478352}
   - component: {fileID: 19716740030557041}
   - component: {fileID: 4998073289277259303}
   m_Layer: 0
@@ -1442,7 +1463,6 @@ GameObject:
   - component: {fileID: 2937567273519426270}
   - component: {fileID: 515610593775803418}
   - component: {fileID: 1261544978944943061}
-  - component: {fileID: 2367630967208941167}
   - component: {fileID: 19716740896187278}
   - component: {fileID: 4998073288394913496}
   m_Layer: 0
@@ -1464,7 +1484,6 @@ GameObject:
   - component: {fileID: 2937567275205890122}
   - component: {fileID: 515610592156509838}
   - component: {fileID: 1261544977393342785}
-  - component: {fileID: 2367630968693566715}
   - component: {fileID: 19716739377617178}
   - component: {fileID: 4998073287849282636}
   - component: {fileID: 8503631008429022680}
@@ -1565,45 +1584,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7628769497249782132}
   m_Mesh: {fileID: -8803937527578110353, guid: 06f261657ea960e4f8ecf6e643ff8200, type: 3}
---- !u!114 &2367630967208941167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104573464637787895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0176abb8b55b0454ba1277885309eb14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  sceneName: Lab
---- !u!114 &2367630968072478352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104573463640032776}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0176abb8b55b0454ba1277885309eb14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  sceneName: FarWestScene
---- !u!114 &2367630968693566715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104573465166050403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0176abb8b55b0454ba1277885309eb14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  sceneName: Nature
 --- !u!1001 &2488015852980057002
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1620,10 +1600,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: LighterQuiDervaisMarcherATester
       objectReference: {fileID: 0}
+    - target: {fileID: 4203295048244422283, guid: 762972da192e98546bfa96754d95386c, type: 3}
+      propertyPath: m_AffordanceStateProvider
+      value: 
+      objectReference: {fileID: 2488015852980057003}
     - target: {fileID: 8228267682110558562, guid: 762972da192e98546bfa96754d95386c, type: 3}
       propertyPath: m_Renderer
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2488015852980057004}
     - target: {fileID: 8860052753224769566, guid: 762972da192e98546bfa96754d95386c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.399
@@ -1669,6 +1653,22 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762972da192e98546bfa96754d95386c, type: 3}
+--- !u!114 &2488015852980057003 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7222802137503110459, guid: 762972da192e98546bfa96754d95386c, type: 3}
+  m_PrefabInstance: {fileID: 2488015852980057002}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e0a5b5ff5540f5b14dd29d46faec22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!23 &2488015852980057004 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2169138212889059613, guid: 762972da192e98546bfa96754d95386c, type: 3}
+  m_PrefabInstance: {fileID: 2488015852980057002}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2505649119903385637 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8860052753224769566, guid: 762972da192e98546bfa96754d95386c, type: 3}
@@ -30924,7 +30924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0176abb8b55b0454ba1277885309eb14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  sceneName: FarWestScene
+  sceneName: Lab
 --- !u!114 &6242268577643778953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30937,7 +30937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0176abb8b55b0454ba1277885309eb14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  sceneName: FarWestScene
+  sceneName: 
 --- !u!1 &7628769496093010719
 GameObject:
   m_ObjectHideFlags: 0
