@@ -14,8 +14,10 @@ public class GazeNextText : MyGazeInteractor
     "Tirez le levier à côté pour lancer le jeu !"};
     protected override void handleGaze(Transform GameObjectTransform)
     {
-        if (GameObjectTransform.name.Equals("Canvas"))
+        Debug.Log("NEXT TEXT");
+        if (GameObjectTransform.name.Equals("Tuto_Canvas"))
         {
+            Debug.Log("Gaze detected on Tuto_Canvas");
             if (textZone == null)
             {
                 textZone = GameObjectTransform.GetComponentInChildren<TextMeshProUGUI>();
@@ -27,6 +29,6 @@ public class GazeNextText : MyGazeInteractor
                 UItoHide.SetActive(false);
             }
         }
-
+        Debug.Log("Gaze not detected Tuto_Canvas");
     }
 }

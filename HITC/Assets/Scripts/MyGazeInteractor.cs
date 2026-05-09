@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-public abstract class MyGazeInteractor : MonoBehaviour
+public class MyGazeInteractor : MonoBehaviour
 {
 
     [SerializeField] protected float maxDistance = 100f;
@@ -17,19 +17,27 @@ public abstract class MyGazeInteractor : MonoBehaviour
         mainCam = Camera.main;        
     }
 
-    protected abstract void handleGaze(Transform GameObjetTransform);
+    protected virtual void handleGaze(Transform GameObjetTransform)
+    {
+        Debug.Log("basic gaze");
+    }
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("Update called in MyGazeInteractor");
         var camTransform = mainCam.transform;
         if (Physics.Raycast(camTransform.position, camTransform.forward, out RaycastHit rHit, maxDistance, TargetLayer))
         {
+            Debug.Log("gougougaga");
             var targetTransform = rHit.transform;
+            Debug.Log("Raycast hit: " + targetTransform.name);
+
             if (targetTransform == currentTarget)
             {
                 gazeTimer += Time.deltaTime;
                 if (gazeTimer >= TimerUntilGazeIsCompleted)
                 {
+
                     handleGaze(targetTransform);
                     //rHit.collider.gameObject.SetActive(false);
                     gazeTimer = 0f;
