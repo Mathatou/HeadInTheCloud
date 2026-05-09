@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject mNameArea;
     [SerializeField] protected AudioClip[] mErrorTextAreaSFX;
     protected AudioSource mTextAreaAudioSource;
+    private HighScoreList playerList;
     private TextMeshProUGUI timerDisplay;
     private List<Shooter> allShooters = new List<Shooter>();
     private int numberToSpawn = 10;
@@ -30,6 +31,8 @@ public class GameManager : MonoBehaviour
         allShooters.AddRange(RgunManager.GetComponentsInChildren<Shooter>());
         GameObject.Find("TimerDisplay").TryGetComponent<TextMeshProUGUI>(out timerDisplay);
         mTextAreaAudioSource = GameObject.Find("NameArea").GetComponent<AudioSource>();
+        playerList = HighScore.ReadFromDisk();
+        HighScore.writeLeaderBorad(playerList);
     }
 
     #region Target Management
@@ -137,7 +140,7 @@ public class GameManager : MonoBehaviour
         if (doWeWrite)
         {
             HighScore.WriteOnDiskPlayer(player);
-            var playerList = HighScore.ReadFromDisk();
+            playerList = HighScore.ReadFromDisk();
             HighScore.writeLeaderBorad(playerList);
             doWeWrite = false;
         }
