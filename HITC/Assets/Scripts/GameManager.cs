@@ -10,7 +10,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject RgunManager;
     [SerializeField] private GameObject BgunManager;
     [SerializeField] private GameObject mNameArea;
-    //[SerializeField] private TargetPool ObjectPool; 
     [SerializeField] protected AudioClip[] mErrorTextAreaSFX;
     protected AudioSource mTextAreaAudioSource;
     private TextMeshProUGUI timerDisplay;
@@ -19,6 +18,7 @@ public class GameManager : MonoBehaviour
     private bool hasTargetBeenSpawned = false;
     private bool hasStarted = false;
     private bool doWeWrite = true;
+    private bool isGameOver = false;
     private string mPlayerName;
     s_HighScore player = new s_HighScore();
 
@@ -128,6 +128,7 @@ public class GameManager : MonoBehaviour
     }
     void endGame()
     {
+        isGameOver = true;
         timerDisplay.text = "Time's up !";
         Debug.Log("Time's up !");
         player.score = getScore();
@@ -196,26 +197,32 @@ public class GameManager : MonoBehaviour
         int mIndex = Random.Range(0, mErrorTextAreaSFX.Length);
         mTextAreaAudioSource.PlayOneShot(mErrorTextAreaSFX[mIndex]);
     }
-#endregion
+    #endregion
 
     private void Update()
     {
+        // On ne fait rien tant que le jeu n'a pas commencé ou est terminé
+        if (!hasStarted || isGameOver) return;
+
         spawnedTargets.RemoveAll(item => item == null);
+
+        gameTime -= Time.deltaTime;
+        // On clamp à 0 pour éviter les valeurs négatives
+        gameTime = Mathf.Max(0f, gameTime);
+
         timerDisplay.text = "Time : " + Mathf.Ceil(gameTime).ToString();
+
         if (gameTime <= 0f)
         {
             endGame();
             return;
         }
-        else
+
+        if (spawnedTargets.Count == 0)
         {
-            if (spawnedTargets.Count == 0 && hasTargetBeenSpawned)
-            {
-                Debug.Log("All targets destroyed");
-                Debug.Log("Respawn ! ");
-                SpawnTarget();
-            }
-            gameTime -= Time.deltaTime;
+            Debug.Log("All targets destroyed — Respawn !");
+            SpawnTarget();
         }
     }
+
 }
