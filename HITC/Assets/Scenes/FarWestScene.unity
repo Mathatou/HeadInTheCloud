@@ -3506,7 +3506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GazeNextText
   maxDistance: 100
-  TimerUntilGazeIsCompleted: 10
+  TimerUntilGazeIsCompleted: 2
   TargetLayer:
     serializedVersion: 2
     m_Bits: 4294967295
