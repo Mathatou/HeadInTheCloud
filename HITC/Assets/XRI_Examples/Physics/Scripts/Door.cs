@@ -76,7 +76,6 @@ namespace UnityEngine.XR.Content.Interaction
             m_KeyKnob.SetActive(false);
             m_Locked = true;
             m_Closed = true;
-            Debug.Log("start");
         }
 
         void Update()
