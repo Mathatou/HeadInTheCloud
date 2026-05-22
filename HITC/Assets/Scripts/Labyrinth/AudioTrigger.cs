@@ -8,7 +8,15 @@ public class AudioTrigger : MonoBehaviour
     {
         if ((other.CompareTag("Player")))
         {
-            mAS.PlayOneShot(mClip);
+            Debug.Log("?????");
+            if (mAS.isPlaying)
+            {
+                mAS.Stop();
+            }
+            else
+            {
+                mAS.Play();
+            }
         }
     }
     private void Start()

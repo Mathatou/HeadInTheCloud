@@ -8,6 +8,8 @@ public class Collectible : MonoBehaviour
     // On crée une référence pour trouver le GameManager
     [SerializeField] private Cle gameManager;
 
+    [SerializeField] private AudioClip sonDeDisparition;
+
     void Start()
     {
         // On cherche l'objet GameManager dans la scène au lancement
@@ -27,7 +29,13 @@ public class Collectible : MonoBehaviour
         if (other.CompareTag("Main"))
         {
             // On prévient le manager
+            Debug.Log("Walta touché !");
             gameManager.AjouterSphere();
+
+            if (sonDeDisparition != null)
+            {
+                AudioSource.PlayClipAtPoint(sonDeDisparition, transform.position);
+            }
 
             // On détruit la sphère
             Destroy(gameObject);

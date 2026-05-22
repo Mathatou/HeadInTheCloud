@@ -3,11 +3,18 @@ using UnityEngine;
 public class Cle : MonoBehaviour
 {
     public int spheresRecoltees = 0;
-    private GameObject cle; 
+    [SerializeField] private GameObject cle;
 
     void Start()
     {
-        if (cle != null) cle.SetActive(false);
+        if (cle != null)
+        {
+            cle.SetActive(false); 
+        }
+        else
+        {
+            Debug.LogError("Oups ! Tu as oublié de glisser l'objet Clé dans le script du GameManager !");
+        }
     }
 
     public void AjouterSphere()
