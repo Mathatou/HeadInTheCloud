@@ -6,14 +6,24 @@ public class EG_Writecode : MonoBehaviour
     [SerializeField] TextMeshProUGUI mTMP;
     [SerializeField] AudioClip mErrorSound;
     [SerializeField] AudioClip mSuccessSound;
+    [SerializeField] GameObject mBriefCase;
+    private Animation mBriefCaseAnim;
+    private AudioSource mBriefCaseAS;
     private string mInputCode = ""; 
     private string mtheCode = "123";
     private AudioSource mAS;
     private void Awake()
     {
         mAS = GetComponent<AudioSource>();
+        mBriefCaseAnim = mBriefCase.GetComponent<Animation>();
+        mBriefCaseAS = mBriefCase.GetComponent<AudioSource>();
     }
-
+    
+    public void playCinematic()
+    {
+        mBriefCaseAnim.Play();
+        mBriefCaseAS.PlayOneShot(mBriefCaseAS.clip);
+    }
     public void onButtonPressedWriteNumber(string value)
     {
         if(mInputCode.Length >= 3)
@@ -43,8 +53,9 @@ public class EG_Writecode : MonoBehaviour
         if (mInputCode.Equals(mtheCode))
         {
             Debug.Log("Code correct !");
-            mAS.PlayOneShot(mSuccessSound);
-            // Code pour ouvrir la porte ou déclencher l'événement
+            mAS.PlayOneShot(mSuccessSound);// Son de succès
+            Debug.Log("Animation de la malette");
+            playCinematic();
         }
         else
         {
