@@ -10,6 +10,9 @@ TagManager:
   - gaze
   - Main
   - Cle
+  - Building
+  - window
+  - Ball
   layers:
   - Default
   - TransparentFX
