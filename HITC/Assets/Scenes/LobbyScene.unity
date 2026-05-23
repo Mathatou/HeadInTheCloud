@@ -346,7 +346,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: b6d8050cecbe75e4c8b3445d5ccd33ff, type: 2}
+  sharedProfile: {fileID: 11400000, guid: ebdb6200a0f66e54fb843433570bf34d, type: 2}
 --- !u!4 &569752062
 Transform:
   m_ObjectHideFlags: 0
@@ -1488,7 +1488,7 @@ GameObject:
   - component: {fileID: 4998073287849282636}
   - component: {fileID: 8503631008429022680}
   m_Layer: 0
-  m_Name: PortailNat
+  m_Name: PortailEG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30308,7 +30308,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -30405,7 +30405,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -30502,7 +30502,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 5
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -30960,7 +30960,7 @@ GameObject:
   - component: {fileID: 9161509015079332762}
   - component: {fileID: 9161509015079332763}
   m_Layer: 0
-  m_Name: NPortail_structure
+  m_Name: EscapePortail_structure
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
