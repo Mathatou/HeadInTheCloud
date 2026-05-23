@@ -14530,13 +14530,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 203500588}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.99763453, z: -0, w: -0.06874167}
-  m_LocalPosition: {x: -8.693749, y: -0.16761994, z: -22.834888}
+  m_LocalRotation: {x: -0, y: -0.97039676, z: -0, w: -0.24151663}
+  m_LocalPosition: {x: -12.605, y: -0.16761994, z: 29.953}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1322672207}
-  m_LocalEulerAnglesHint: {x: 0, y: -187.883, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -207.952, z: 0}
 --- !u!1001 &204198920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30667,15 +30667,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2472749808003574314, guid: 480dd2feb90d9c7438d4718583032a8c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.191
+      value: -0.129
       objectReference: {fileID: 0}
     - target: {fileID: 2891892737510971531, guid: 480dd2feb90d9c7438d4718583032a8c, type: 3}
       propertyPath: m_text
-      value: '
-
-        Bien joue
-
-        du premier coup !'
+      value: "Es tu sur \nd'avoir trouve\nl'orbe de mr white"
       objectReference: {fileID: 0}
     - target: {fileID: 2891892737510971531, guid: 480dd2feb90d9c7438d4718583032a8c, type: 3}
       propertyPath: m_HorizontalAlignment
@@ -38144,7 +38140,7 @@ Transform:
   m_GameObject: {fileID: 594036441}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.49672142, z: -0, w: -0.8679101}
-  m_LocalPosition: {x: -7.7037497, y: -0.051620007, z: -18.98489}
+  m_LocalPosition: {x: -0.077, y: -0.051620007, z: -11.584}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -53069,19 +53065,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4549476745134580, guid: 56d190a5250bea04ab643dd056b638f6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.01962
+      value: 9.054
       objectReference: {fileID: 0}
     - target: {fileID: 4549476745134580, guid: 56d190a5250bea04ab643dd056b638f6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.56121
+      value: -1.911
       objectReference: {fileID: 0}
     - target: {fileID: 4549476745134580, guid: 56d190a5250bea04ab643dd056b638f6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15.672211
+      value: 14.814
       objectReference: {fileID: 0}
     - target: {fileID: 4549476745134580, guid: 56d190a5250bea04ab643dd056b638f6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7162127
       objectReference: {fileID: 0}
     - target: {fileID: 4549476745134580, guid: 56d190a5250bea04ab643dd056b638f6, type: 3}
       propertyPath: m_LocalRotation.x
@@ -53093,7 +53089,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4549476745134580, guid: 56d190a5250bea04ab643dd056b638f6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.69788206
       objectReference: {fileID: 0}
     - target: {fileID: 4549476745134580, guid: 56d190a5250bea04ab643dd056b638f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -53105,7 +53101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4549476745134580, guid: 56d190a5250bea04ab643dd056b638f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 88.515
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -69721,11 +69717,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2891892737510971531, guid: 480dd2feb90d9c7438d4718583032a8c, type: 3}
       propertyPath: m_text
-      value: 'Why didn''t you
-
-        trust the last
-
-        sign ?'
+      value: "Pourquoi \nne pas faire\nconfiance "
       objectReference: {fileID: 0}
     - target: {fileID: 2891892737510971531, guid: 480dd2feb90d9c7438d4718583032a8c, type: 3}
       propertyPath: m_HorizontalAlignment
@@ -83051,6 +83043,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2472749808003574314, guid: 480dd2feb90d9c7438d4718583032a8c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.199
+      objectReference: {fileID: 0}
     - target: {fileID: 2891892737510971531, guid: 480dd2feb90d9c7438d4718583032a8c, type: 3}
       propertyPath: m_text
       value: Tu es vraiment retourne verifier ??
@@ -94568,7 +94564,7 @@ Transform:
   m_GameObject: {fileID: 1437401665}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.80934405, z: -0, w: 0.58733493}
-  m_LocalPosition: {x: -10.10375, y: -0.55479777, z: -19.87489}
+  m_LocalPosition: {x: -12.299, y: -0.55479777, z: -11.111}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -104770,7 +104766,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4084744580586134, guid: f2fdc4650eb635b4cae575d09f55fea9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.24
+      value: 15.33
       objectReference: {fileID: 0}
     - target: {fileID: 4084744580586134, guid: f2fdc4650eb635b4cae575d09f55fea9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -104778,7 +104774,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4084744580586134, guid: f2fdc4650eb635b4cae575d09f55fea9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -35.86
+      value: -36.66
       objectReference: {fileID: 0}
     - target: {fileID: 4084744580586134, guid: f2fdc4650eb635b4cae575d09f55fea9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -108457,7 +108453,7 @@ Transform:
   m_GameObject: {fileID: 1659146120}
   serializedVersion: 2
   m_LocalRotation: {x: 0.013283635, y: -0.38660586, z: -0.01996909, w: 0.92193323}
-  m_LocalPosition: {x: -3.89375, y: 0.5243801, z: -18.454891}
+  m_LocalPosition: {x: -3.288, y: -0.64, z: 10.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -119942,7 +119938,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2891892737510971531, guid: 480dd2feb90d9c7438d4718583032a8c, type: 3}
       propertyPath: m_text
-      value: "Fast Exit Here \nAgain"
+      value: 'Encore Une
+
+        Promis !'
       objectReference: {fileID: 0}
     - target: {fileID: 2891892737510971531, guid: 480dd2feb90d9c7438d4718583032a8c, type: 3}
       propertyPath: m_HorizontalAlignment
@@ -151577,6 +151575,16 @@ PrefabInstance:
     - target: {fileID: 812875848197832715, guid: 480dd2feb90d9c7438d4718583032a8c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2891892737510971531, guid: 480dd2feb90d9c7438d4718583032a8c, type: 3}
+      propertyPath: m_text
+      value: 'Sortie Rapide
+
+        Juste ici'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2891892737510971531, guid: 480dd2feb90d9c7438d4718583032a8c, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

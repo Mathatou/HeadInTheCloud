@@ -5,6 +5,7 @@ public class TP : MonoBehaviour
 {
     [Tooltip("The exact name of the scene to load. Make sure it's added to the Build Settings!")]
     [SerializeField] private string sceneName;
+    [SerializeField] 
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
