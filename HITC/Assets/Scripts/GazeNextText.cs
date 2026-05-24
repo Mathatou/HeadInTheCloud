@@ -9,15 +9,13 @@ public class GazeNextText : MyGazeInteractor
     private TextMeshProUGUI textZone;
     private string[] textsToCycle = {
     "Bienvenue dans Color Shooter !",
-    "Tirez sur les cibles de la couleur adéquate !",
-    "Derrière vous se trouve deux pistolets de couleur.",
-    "Tirez le levier à côté pour lancer le jeu !"};
+    "Derriere vous se trouve deux pistolets de couleur.",
+    "Entrez votre nom, appuyez sur le bouton valider, et pressez le bouton rouge avec votre main !",
+    "Puis, tirez sur les cibles de la couleur adequate qui seront sur votre gauche !"};
     protected override void handleGaze(Transform GameObjectTransform)
     {
-        Debug.Log("NEXT TEXT");
         if (GameObjectTransform.name.Equals("Tuto_Canvas"))
         {
-            Debug.Log("Gaze detected on Tuto_Canvas");
             if (textZone == null)
             {
                 textZone = GameObjectTransform.GetComponentInChildren<TextMeshProUGUI>();
@@ -29,6 +27,5 @@ public class GazeNextText : MyGazeInteractor
                 UItoHide.SetActive(false);
             }
         }
-        Debug.Log("Gaze not detected Tuto_Canvas");
     }
 }
