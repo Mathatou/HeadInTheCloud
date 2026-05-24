@@ -21364,10 +21364,6 @@ PrefabInstance:
       propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
       value: 0.972
       objectReference: {fileID: 0}
-    - target: {fileID: 4998073288110098085, guid: 775092ceddd8a164d86b0bc7637d7f6b, type: 3}
-      propertyPath: MaxDistance
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 6242268577920031072, guid: 775092ceddd8a164d86b0bc7637d7f6b, type: 3}
       propertyPath: sceneName
       value: LobbyScene
@@ -34487,6 +34483,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4662295394829362, guid: 3bb4f909df061ef448e04bc986dc6dde, type: 3}
   m_PrefabInstance: {fileID: 518863985}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &519212793
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 519212795}
+  - component: {fileID: 519212794}
+  m_Layer: 0
+  m_Name: Global Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &519212794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519212793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.Volume
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: c705af75355923541bb9fc926c988982, type: 2}
+--- !u!4 &519212795
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519212793}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.7520205, y: 1.4536152, z: -70.43387}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &519848808 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4005049300537478, guid: 625c379bf13035048bfcf75425e64263, type: 3}
@@ -69895,55 +69940,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4005049300537478, guid: 625c379bf13035048bfcf75425e64263, type: 3}
   m_PrefabInstance: {fileID: 1047904189}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1048700619
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1048700621}
-  - component: {fileID: 1048700620}
-  m_Layer: 0
-  m_Name: Global Volume
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1048700620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1048700619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.Volume
-  m_IsGlobal: 1
-  priority: 0
-  blendDistance: 0
-  weight: 1
-  sharedProfile: {fileID: 11400000, guid: c705af75355923541bb9fc926c988982, type: 2}
---- !u!4 &1048700621
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1048700619}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.769793, y: 1.4750233, z: 2.8487048}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1048827003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -148456,15 +148452,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1717954560826701724}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.9994557, z: -0, w: 0.032989748}
-  m_LocalPosition: {x: -13.15, y: 0.07987976, z: -1.12}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -1.737607, y: 0.196, z: 23.390339}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 544568034}
   - {fileID: 6981642496970513845}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 176.219, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &1718513915198106627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154819,8 +154815,5 @@ SceneRoots:
   - {fileID: 1717954560826701727}
   - {fileID: 1322672207}
   - {fileID: 1456063178}
-<<<<<<< Updated upstream
-  - {fileID: 1048700621}
-=======
   - {fileID: 766118723}
->>>>>>> Stashed changes
+  - {fileID: 519212795}
