@@ -7,6 +7,11 @@ public class Lab_Porte : MonoBehaviour
 
     [SerializeField] private AudioClip sonOuverture; // Le fichier audio du grincement (.mp3/.wav)
     private AudioSource hautParleur;
+
+    private void Start()
+    {
+        hautParleur = GetComponent<AudioSource>();
+    }
     public void ouvrirporte()
     {
         if (animationPorte != null)
